@@ -1,6 +1,3 @@
-# fend-restaurant-reviews
-A simple restaurant reviews app.
-
 # Project - Restaurant Reviews
 
 ## Description
