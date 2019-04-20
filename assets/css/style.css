@@ -13,18 +13,6 @@ html {
   font-size: 62.5%;
 }
 
-@media (max-width: 900px) {
-  html {
-    font-size: 55%;
-  }
-}
-
-@media (max-width: 600px) {
-  html {
-    font-size: 50%;
-  }
-}
-
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -37,7 +25,7 @@ body {
 }
 
 ul, li {
-  color: #353b50;
+  color: #303030;
 }
 
 a {
@@ -75,7 +63,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
           justify-content: center;
   width: 100%;
   height: 10rem;
-  background-color: #353b50;
+  background-color: #303030;
   text-align: center;
 }
 
@@ -97,7 +85,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 
 .footer {
-  background-color: #353b50;
+  background-color: #303030;
   color: #f5f5f6;
   font-size: .8rem;
   letter-spacing: 0.1rem;
@@ -165,11 +153,16 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 
 .filter-options h2 {
-  color: #353b50;
+  color: #303030;
   font-weight: normal;
   line-height: 1;
   font-size: 1.7rem;
   text-transform: uppercase;
+}
+
+.filter-options label {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .filter-options select {
@@ -408,7 +401,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 
 .inside .restaurant-container figure figcaption {
-  background-color: #353b50;
+  background-color: #303030;
   color: #f5f5f6;
   font-size: 1.7rem;
   font-weight: 300;
@@ -530,20 +523,20 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   border-radius: 10rem;
   -webkit-transition: all .2s;
   transition: all .2s;
-  color: #fff;
-  background-color: #2cd18a;
+  color: #303030;
+  background-color: #ffb138;
 }
 
 .btn:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
-  background-color: #23a76e;
+  background-color: #ff9d05;
 }
 
 .btn:active {
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
-  background-color: #28bc7c;
+  background-color: #ffa71f;
 }
 
 .btn--block {
