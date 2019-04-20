@@ -154,7 +154,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 .filter-options {
 	min-height: 8rem;
 	background-color: darken($color-gray, 3%);
-	padding: 3rem 1.5rem;
+	padding: 3rem 2.5rem;
 	text-align: center;
 
 	h2 {
@@ -178,8 +178,8 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 		border: 0.1rem solid $color-secondary;
 		border-radius: 100px;
 
-		@include tablet {
-			width: 45%;
+		@include desktop {
+			width: 20%;
 			margin-right: 1.5rem;
 			&::after {
 				display: flex;
@@ -189,6 +189,24 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 
 		@include notebook {
 			width: 25%;
+			margin-right: 1.5rem;
+			&::after {
+				display: flex;
+				flex-direction: row;
+			}
+		}
+
+		@include tablet {
+			width: 45%;
+			margin-right: 1.5rem;
+			&::after {
+				display: flex;
+				flex-direction: row;
+			}
+		}
+
+		@include phone {
+			width: 100%;
 			margin-right: 1.5rem;
 			&::after {
 				display: flex;
@@ -209,14 +227,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 	margin: 0 auto;
 	padding: 5rem 0;
 
-	@include tablet {
-		width: 85%;
-	}
-
-	@include notebook {
-		width: 80%;
-	}
-
 	@include desktop {
 		width: 75%;
 	}
@@ -224,7 +234,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 	li {
 		align-items: flex-start;
 		background-color: $color-white;
-		margin-bottom: 2.5rem;
+		margin-bottom: 3rem;
 		min-height: 38rem;
 		padding: 0 0 2.5rem;
 		text-align: left;
@@ -247,16 +257,20 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 			}
 		}
 
-		@include tablet {
-			width: 47%;
+		@include desktop {
+			width: 23%;
 		}
-
+		
 		@include notebook {
 			width: 30%;
 		}
-		
-		@include desktop {
-			width: 23%;
+	
+		@include tablet {
+			width: 47%;
+		}
+	
+		@include phone {
+			width: 100%;
 		}
 	}
 }
@@ -291,8 +305,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 			height: 40vh;
 			margin-top: 4.3rem;
 		}
-
-
 	}
 
 	#map {
